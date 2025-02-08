@@ -1,10 +1,81 @@
+/* Reset di base per normalizzare gli stili del browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding e border nella larghezza e altezza dell'elemento */
+}
+
 body {
-    font-family: sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* Font di base */
+    line-height: 1.6; /* Interlinea */
+    color: #333; /* Colore del testo */
+    background-color: #f4f4f4; /* Colore di sfondo */
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 h1 {
-    color: #0056b3;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007bff; /* Colore del link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+a:hover {
+    text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
+}
+
+/* Stili per la tabella */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0; /* Colore di sfondo dell'intestazione */
+}
+
+
+/*  Classi utili  */
+.container {
+    max-width: 960px; /* Larghezza massima del contenitore principale */
+    margin: 0 auto; /* Centra il contenitore */
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }

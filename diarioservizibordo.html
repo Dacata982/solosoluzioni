@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario dei Servizi</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px; /* Spazio tra le tabelle */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Diario dei Servizi del Personale di Macchina e di Bordo</h1>
+
+    <table>
+        <tr>
+            <th>Legenda</th>
+            <th>Descrizione</th>
+        </tr>
+        <tr><td>Treno</td><td>Numero Treno Effettuato</td></tr>
+        <tr><td>Suf</td><td>Parametro tecnico del treno</td></tr>
+        <tr><td>Uti</td><td>Utilizzazione (Agente Unico - Doppio Agente)</td></tr>
+        <tr><td>ser</td><td>vedi Tabella</td></tr>
+        <tr><td>Orario Prescr.</td><td>Partenza Arrivo Prescritto</td></tr>
+        <tr><td>Orario Reale</td><td>Partenza Arrivo Reale</td></tr>
+        <tr><td>Tempi Acc.</td><td>Acessori in arrivo e partenza</td></tr>
+        <tr><td>Staz. Partenza</td><td>Stazione di Partenza</td></tr>
+        <tr><td>Staz. Arrivo</td><td>Stazione di Arrivo</td></tr>
+        <tr><td>TotLa</td><td>Lavoro singola riga</td></tr>
+        <tr><td>Ass/Pre</td><td>Descrizione dell'Assenz. o Totale lavoro (L-hh, mm) o Interv. lavorato (L-hh,mm)<br>Nei giorni di lavoro indica la prestazione massima giornaliera Nei giorni di assenza indica le ore di assenza previste dal turno</td></tr>
+        <tr><td>Dur</td><td>Indennità di pernotto</td></tr>
+        <tr><td>P</td><td>Servizio Notturno</td></tr>
+        <tr><td>Ser.N</td><td>Completamento Corsa</td></tr>
+        <tr><td>CC</td><td>Km effettuati</td></tr>
+        <tr><td>Km</td><td>Condotta Diurna o Notturna ad Agente Unico o Agente Doppio</td></tr>
+        <tr><td>Condotta/Scorta</td><td>Andata e ritorno ο RFR</td></tr>
+        <tr><td>Assenza della Residenza</td><td>Scorta</td></tr>
+        <tr><td>1</td><td>Condotta</td></tr>
+        <tr><td>11</td><td>Scorta su altro vettore</td></tr>
+        <tr><td>21</td><td>Scorta cuccette</td></tr>
+        <tr><td>40</td><td>Tempi intermedi considerati condotta o scorta</td></tr>
+        <tr><td>4C</td><td>Integrazione oraria per servizi di condotta o scorta ai treni della Div. Cargo</td></tr>
+        <tr><td>4P</td><td>Riallineamento orario di arrivo per serv. di condotta o scorta in anticpo corsa</td></tr>
+        <tr><td>4X</td><td>Integrazione orari per serv. di condotta o scorta ai treni delle Divisioni Passeggeri N/I e Regionale</td></tr>
+        <tr><td>5C</td><td>Integrazione orario arrivo</td></tr>
+        <tr><td>7C</td><td>Via ordianaria comandata (per servizi di manovra, traghettamento, ecc.)</td></tr>
+        <tr><td>14</td><td>Via ordianaria comandata (per servizi ai treni)</td></tr>
+        <tr><td>15</td><td>Viaggio fuori servizio (per servizi di manovra, traghettamento, ecc.)</td></tr>
+        <tr><td>16</td><td>Via ordinaria</td></tr>
+        <tr><td>18</td><td>Viaggio fuori servizio (per servizi ai treni)</td></tr>
+        <tr><td>65</td><td>Integrazione orario arrivo</td></tr>
+
+        <tr><td>67</td><td>Via ordianaria comandata (per servizi di manovra, traghettamento, ecc.)</td></tr>
+        <tr><td>68</td><td>Viaggio fuori servizio (per servizi ai treni)</td></tr>
+        <tr><td>94</td><td>Via ordinaria</td></tr>
+        <tr><td>6C</td><td>Integrazione orario arrivo</td></tr>
+
+    </table>
+
+    <table>
+        <tr>
+            <th>Altre attività</th>
+            <th>Descrizione</th>
+        </tr>
+        <tr><td>2</td><td>Soste di servizio</td></tr>
+        <tr><td>3</td><td>Tempi intermedi</td></tr>
+        <tr><td>7</td><td>Controlleria a terra</td></tr>
+        <tr><td>8</td><td>Controlleria saltuaria a bordo treno</td></tr>
+        <tr><td>9</td><td>Attività in mansioni di altro profilo</td></tr>
+        <tr><td>12</td><td>Tempi di attesa / integrazione orari prescritti/reali</td></tr>
+        <tr><td>13</td><td>Tempi supplem. personale di bordo (se non assoociati ai tempi acessori)</td></tr>
+        <tr><td>17</td><td>Refezione</td></tr>
+        <tr><td>19</td><td>Refezione per treni merci in forte ritardo</td></tr>
+        <tr><td>24</td><td>Riserva</td></tr>
+        <tr><td>27</td><td>Manovra</td></tr>
+        <tr><td>41</td><td>Ora comandata</td></tr>
+        <tr><td>42</td><td>Delimitazione inizio prestazione</td></tr>
+        <tr><td>48</td><td>Riserva presenzita</td></tr>
+        <tr><td>62</td><td>Corso</td></tr>
+        <tr><td>63</td><td>Corso in trasferta</td></tr>
+        <tr><td>69</td><td>Turno di spinta</td></tr>
+        <tr><td>77</td><td>Traghettamento</td></tr>
+        <tr><td>91</td><td>Pausa</td></tr>
+        <tr><td>95</td><td>Spostamento locomotiva</td></tr>
+        <tr><td>96</td><td>Ricovero materiale</td></tr>
+        <tr><td>97</td><td>Riposo fuori residenza</td></tr>
+        <tr><td>98</td><td>Giro locomotiva</td></tr>
+        <tr><td>99</td><td>Cambio volante</td></tr>
+        <tr><td>SC</td><td>Sciopero</td></tr>
+    </table>
+
+
+     <table>
+        <tr>
+            <th>Codici di Utilizzazione</th>
+            <th>Descrizione</th>
+        </tr>
+        <tr><td>DP</td><td>Servizio di condotta da Doppio Agente</td></tr>
+        <tr><td>AU</td><td>Servizio di condotta ad Agente Unico</td></tr>
+        <tr><td>DS</td><td>Servizio di traghettamento effettuato con un solo agente di condotta</td></tr>
+        <tr><td>TU</td><td>Capo Treno</td></tr>
+        <tr><td>CT</td><td>Capo Treno in servizi ad Agente Unico</td></tr>
+         <tr><td>CA</td><td>Capo Servizi Treno</td></tr>
+          <tr><td>CS</td><td>Cuccettista</td></tr>
+    </table>
+
+     <table>
+        <tr>
+            <th>Riepilogo informazioni per il calcolo dello straord.</th>
+            <th>Descrizione</th>
+        </tr>
+        <tr><td>Lav. Progr.</td><td>Lavoro mensile previsto dal CCNL</td></tr>
+        <tr><td>Lav. Strm</td><td>Lavoro consuntivato ai fini del calcolo dello straord. Mensile</td></tr>
+        <tr><td>Lav. Netto</td><td>Lavoro al netto dei ritardo e dello straordinario giornaliero</td></tr>
+         <tr><td>Rit. xxx</td><td>Consistenza ritardo per fascia oraria</td></tr>
+          <tr><td>Tot. Assen.</td><td>Totale lavoro previsto nelle giornate di assenza</td></tr>
+           <tr><td>Str. Giorn.</td><td>Totale straordinari giornaiero</td></tr>
+            <tr><td>Str. Pr Net.</td><td>Straordinario nelle prest. Al netto di ritardo e str. giorn.</td></tr>
+             <tr><td>Str. Res Es</td><td>Totale ecced. oraria</td></tr>
+              <tr><td>Str.xxx.x</td><td>Straordinario mensile ripartito per fascia oraria</td></tr>
+               <tr><td>Lav. Tot</td><td>Totale generale lavoro</td></tr>
+    </table>
+
+</body>
+</html>

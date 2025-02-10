@@ -9,10 +9,25 @@
     <title>Solo Soluzioni</title>
     <link rel="stylesheet" href="style.css"> 
     <style>
-        body {
-            background-image: url("sfondohome.jpg"); /*Percorso dell'immagine */
-            background-size: cover;  /*Copre l'intero body */
-            background-repeat: no-repeat; /*Non ripete l'immagine */
+        bodybody {
+            background-image: url("sfondohome.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container { /*  Aggiunti stili per contenere immagini e titolo */
+            display: flex;
+            align-items: center; /* Allinea verticalmente al centro */
+            justify-content: center; /* Allinea orizzontalmente al centro */
+            flex-direction: row; /* Disposizione orizzontale */          
+        }
+        .container img { /* Stile per le immagini */
+            height: 50px; /* Altezza dell'immagine (modifica a piacere) */
+            margin: 0 10px; /* Spazio tra le immagini e il testo */
+        }
+
+        h1 {
+            margin: 0; /* Rimuovi margini predefiniti di h1 per un migliore allineamento */
+
         }
     </style>
 </head>
@@ -21,7 +36,11 @@
 
 <body>
 <div class="container">
-    <h1>Solo soluzioni</h1>
+    <div class="container">
+        <img src="immagine1.png" alt="Immagine 1"> 
+        <h1>Solo soluzioni</h1>
+        <img src="immagine2.png" alt="Immagine 2">
+    </div>
     <h2>Piccolo breviario per i ferrovieri che lavorano sui treni Piemontesi.</h2>
 
     <a href="conguagliofineanno.html" class="btn">Conguaglio IRPEF di fine anno</a>

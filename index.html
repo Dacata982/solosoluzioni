@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-
-    <link rel="stylesheet" href="style.css">
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solo Soluzioni</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <style>
-        bodybody {
+        body {
             background-image: url("sfondohome.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
-        .container { /*  Aggiunti stili per contenere immagini e titolo */
+        .container {
             display: flex;
-            align-items: center; /* Allinea verticalmente al centro */
-            justify-content: center; /* Allinea orizzontalmente al centro */
-            flex-direction: row; /* Disposizione orizzontale */          
+            align-items: center;  /* Allineamento orizzontale al centro se flex-direction: column */
+            justify-content: center; /* Allineamento verticale al centro se flex-direction: column */
+            flex-direction: column; /* Allineamento verticale */
+            height: 100vh;        /* Imposta l'altezza del container al 100% della viewport */
         }
-        .container img { /* Stile per le immagini */
-            height: 50px; /* Altezza dell'immagine (modifica a piacere) */
-            margin: 0 10px; /* Spazio tra le immagini e il testo */
+        .container img {
+            height: 50px;
+            margin: 10px 0; /* Margine superiore e inferiore */
+        }
+        h1, h2 { /* Centra anche h1 e h2 */
+            text-align: center;  /* Allineamento del testo al centro */
+            margin: 10px 0;      /* Spazio tra il titolo e gli altri elementi */
+
         }
 
-        h1 {
-            margin: 0; /* Rimuovi margini predefiniti di h1 per un migliore allineamento */
-
+        .btn {
+           margin: 5px 0; /* Aggiungi margine tra i bottoni */
+           display: block;
         }
     </style>
 </head>
-
-
-
 <body>
-<div class="container">
+    <div class="container">
         <img src="scimmietta.png" alt="scimmietta 1"> 
         <h1>Solo soluzioni</h1>
         <img src="scimmietta.png" alt="scimmietta 2">
-    
-    <h2>Piccolo breviario per i ferrovieri che lavorano sui treni Piemontesi.</h2>
-
-    <a href="conguagliofineanno.html" class="btn">Conguaglio IRPEF di fine anno</a>
-    <a href="localitaserviziorfi.html" class="btn">Località di servizio RFI</a>
-    <a href="diarioservizidibordo.html" class="btn">Diario Servizi di Bordo</a>
-    <a href="codicisalette.html" class="btn">Codici Salette</a>
+        <h2>Piccolo breviario per i ferrovieri che lavorano sui treni Piemontesi.</h2>
+        <a href="conguagliofineanno.html" class="btn">Conguaglio IRPEF di fine anno</a>
+        <a href="localitaserviziorfi.html" class="btn">Località di servizio RFI</a>
+        <a href="diarioservizidibordo.html" class="btn">Diario Servizi di Bordo</a>
+        <a href="codicisalette.html" class="btn">Codici Salette</a>
     </div>    
-
 </body>
 </html>

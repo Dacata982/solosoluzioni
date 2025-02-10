@@ -1,81 +1,67 @@
-/* Reset di base per normalizzare gli stili del browser */
+/* Reset di base */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding e border nella larghezza e altezza dell'elemento */
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif; /* Font di base */
-    line-height: 1.6; /* Interlinea */
-    color: #333; /* Colore del testo */
-    background-color: #f4f4f4; /* Colore di sfondo */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Colore di sfondo chiaro */
+    color: #333;          /* Colore del testo scuro */
 }
 
-h1, h2, h3 {
-    font-weight: bold;
-    margin-bottom: 10px;
+.container {
+    max-width: 800px;  /* Larghezza massima del contenuto */
+    margin: 20px auto; /* Centra il contenuto */
+    padding: 20px;
+    background-color: white; /* Sfondo bianco per il contenuto */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ombra leggera */
+    border-radius: 8px; /* Angoli arrotondati */
 }
 
 h1 {
-    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0056b3; /* Colore del titolo */
 }
 
-h2 {
-    font-size: 1.5em;
-}
 
-h3 {
-    font-size: 1.2em;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-a {
-    color: #007bff; /* Colore del link */
+/* Stile dei pulsanti */
+.btn {
+    display: block; /* Ogni pulsante occupa una riga */
+    width: 100%;    /* Larghezza al 100% del contenitore */
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
     text-decoration: none; /* Rimuove la sottolineatura */
+    background-color: #007bff; /* Colore di sfondo del pulsante */
+    color: white;            /* Colore del testo bianco */
+    border: none;
+    border-radius: 5px;   /* Angoli arrotondati */
+    font-weight: bold;     /* Testo in grassetto */
+    transition: background-color 0.3s ease; /* Transizione fluida del colore di sfondo */
+    cursor: pointer;
 }
 
-a:hover {
-    text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
+.btn:hover {
+    background-color: #0056b3; /* Colore di sfondo al passaggio del mouse */
 }
 
-/* Stili per la tabella */
+/* Stile per la tabella (se presente) */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 th, td {
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 8px;
     text-align: left;
 }
 
 th {
-    background-color: #f0f0f0; /* Colore di sfondo dell'intestazione */
-}
-
-
-/*  Classi utili  */
-.container {
-    max-width: 960px; /* Larghezza massima del contenitore principale */
-    margin: 0 auto; /* Centra il contenitore */
-    padding: 20px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.button:hover {
-    background-color: #0056b3;
+    background-color: #f0f0f0;
 }

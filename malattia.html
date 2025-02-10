@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPS - certificazione di malattia e visite di controllo </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url("sfondohome.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh; /* Per centrare verticalmente */
+        }
+
+
+        .pdf-container {
+            width: 800px; /* Larghezza del visualizzatore */
+            height: 600px; /* Altezza del visualizzatore */
+        }
+        /* Stile per il pulsante "Indietro" */
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container"> 
+            <img src="scimmietta.png" alt="scimmietta 1">
+            <h1>Visualizza PDF</h1>
+            <img src="scimmietta.png" alt="scimmietta 2">
+        </div>
+
+        <div class="pdf-container">
+             <embed src="malattia.pdf" type="application/pdf" width="100%" height="100%" />
+            <!--<iframe src="malattia.pdf" width="100%" height="100%"></iframe>  Alternativa con iframe-->
+        </div>
+
+        <a href="index.html" class="back-button">Indietro</a>
+    </div>
+</body>
+</html>
